@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1000279087405",
+    "firebase_url": "https://ecofficient-a304a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ecofficient-a304a",
+    "storage_bucket": "ecofficient-a304a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000279087405:android:d65bbe098b43103248dba4",
+        "android_client_info": {
+          "package_name": "com.example.ecofficient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000279087405-83u1a4tgogjn247ald4jpb4bbk0jtvhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUJiLLFcezNRtaKTFoKaVto3M_TZyRibo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000279087405-83u1a4tgogjn247ald4jpb4bbk0jtvhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

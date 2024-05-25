@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LightSensorFragment"
+    android:background="@drawable/gradient_light_fragment"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onoff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/warmth"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/image" android:layout_height="0dp">
+
+            <Switch
+                android:id="@+id/onoffbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/onoffbutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Turn all the lights: "
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            app:layout_constraintWidth_percent="1"
+            app:layout_constraintHeight_percent="0.8"
+            android:src="@drawable/blueprint"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/wrapper"
+
+            android:layout_height="0dp"
+            android:layout_width="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/warmth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onoff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/intensity"
+
+        >
+
+
+        <TextView
+            android:id="@+id/warmthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light warmth"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/warmth1"
+            />
+
+        <View
+            android:id="@+id/warmth1"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+             android:layout_height="0dp"
+             android:layout_width="0dp"
+            android:background="#FF8A12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/warmth2"
+
+
+            />
+
+
+        <View
+            android:id="@+id/warmth2"
+            app:layout_constraintLeft_toRightOf="@id/warmth1"
+            app:layout_constraintWidth_percent="0.12"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#FFB46B"
+            app:layout_constraintRight_toLeftOf="@id/warmth3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+            android:id="@+id/warmth3"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#FFD1A3"
+            app:layout_constraintRight_toLeftOf="@id/warmth4"
+            app:layout_constraintLeft_toRightOf="@id/warmth2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+            android:id="@+id/warmth4"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#FFE4CE"
+            app:layout_constraintLeft_toRightOf="@id/warmth3"
+            app:layout_constraintRight_toLeftOf="@id/warmth5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+            android:id="@+id/warmth5"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#FFF3EF"
+            app:layout_constraintLeft_toRightOf="@id/warmth4"
+            app:layout_constraintRight_toLeftOf="@+id/warmth6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+            android:id="@+id/warmth6"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#FFFFFF"
+            app:layout_constraintLeft_toRightOf="@id/warmth5"
+            app:layout_constraintRight_toLeftOf="@+id/warmth7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <View
+            android:id="@+id/warmth7"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#E3E9FF"
+            app:layout_constraintLeft_toRightOf="@id/warmth6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/warmth8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <View
+            android:id="@+id/warmth8"
+            app:layout_constraintWidth_percent="0.11"
+            app:layout_constraintHeight_percent="0.4"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="#D6E1FF"
+            app:layout_constraintLeft_toRightOf="@id/warmth7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/intensity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/warmth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+        <TextView
+            android:id="@+id/intesityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Light intesity"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/intesity1"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintTop_toBottomOf="@id/intesityText"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            >
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/intesity1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/intesity2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intesityText"
+            android:background="@drawable/intesity_black"
+            />
+
+
+        <View
+            android:id="@+id/intesity2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintRight_toLeftOf="@id/intesity3"
+            app:layout_constraintLeft_toRightOf="@id/intesity1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intesityText"
+            android:background="@drawable/intesity_black"
+            />
+
+        <View
+            android:id="@+id/intesity3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/intesity_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+
+
+            app:layout_constraintLeft_toRightOf="@id/intesity2"
+            app:layout_constraintRight_toLeftOf="@id/intesity4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intesityText"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <View
+            android:id="@+id/intesity4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintLeft_toRightOf="@id/intesity3"
+            app:layout_constraintRight_toLeftOf="@id/intesity5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intesityText"
+            android:background="@drawable/intesity_black"
+            />
+
+        <View
+            android:id="@+id/intesity5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintLeft_toRightOf="@id/intesity4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intesityText"
+            android:background="@drawable/intesity_black"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
